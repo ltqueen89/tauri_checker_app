@@ -77,7 +77,6 @@ const sites = ref([
   createSite("kinopoisk.ru"),
   createSite("github.com"),
   createSite("habr.com"),
-  createSite("pikabu.ru"),
   createSite("rt.com"),
   createSite("rbc.ru"),
   createSite("lenta.ru"),
