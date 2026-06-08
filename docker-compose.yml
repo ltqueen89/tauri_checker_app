@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  postgres_db:
+    image: postgres:16-alpine
+    container_name: site_monitor_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: monitor_user
+      POSTGRES_PASSWORD: monitor_password
+      POSTGRES_DB: site_monitoring
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

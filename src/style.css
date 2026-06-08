@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Вместо @apply в v4 для простых вещей лучше использовать стандартные переменные или просто классы в HTML, но если хочешь в CSS, то так: */
 body {
   background-color: var(--color-slate-900);
   color: white;
